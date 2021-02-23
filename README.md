@@ -1,3 +1,6 @@
+The folder "IGD+-MaOEA-RS" contains the source code of the IGD+-MaOEA-RS, A-IGD+-MaOEA-RS, R-IGD+-MaOEA-RS, and AR-IGD+-MaOEA-RS.
+The folder "Supplementary material" contains the supplementary material of the article "Towards a More Balanced Reference Set Adaptation Method: First Results".
+
 """
 PARAMETERS
 
