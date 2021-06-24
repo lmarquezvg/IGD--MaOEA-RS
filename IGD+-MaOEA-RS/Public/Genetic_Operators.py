@@ -1,3 +1,14 @@
+"""
+Generate offspring with simulated binary crossover and polynomial mutation.
+
+K. Deb and R. Agrawal, "Simulated binary crossover for continuous search 
+space," in Complex Systems, vol. 9, no. 2, pp. 115–148, 1995.
+
+Y. Tian, R. Cheng, X. Zhang, and Y. Jin, "PlatEMO: A MATLAB platform for 
+evolutionary multi-objective optimization," in IEEE Computational Intelligence 
+Magazine, vol. 12, no. 4, pp. 73-87, 2017.
+"""
+
 import numpy as np
 
 #Performs simulated binary crossover

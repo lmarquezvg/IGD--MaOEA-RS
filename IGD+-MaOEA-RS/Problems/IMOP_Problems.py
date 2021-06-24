@@ -1,3 +1,12 @@
+"""
+IMOP test problems.
+
+Y. Tian, R. Cheng, X. Zhang, M. Li, and Y. Jin, "Diversity Assessment of 
+Multi-Objective Evolutionary Algorithms: Performance Metric and Benchmark 
+Problems [Research Frontier]," in IEEE Computational Intelligence Magazine, 
+vol. 14, no. 3, pp. 61-74, 2019.
+"""
+
 import numpy as np
 
 #Returns number of decision variables and their lower and upper bounds

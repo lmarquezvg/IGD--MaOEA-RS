@@ -1,3 +1,16 @@
+"""
+DTLZ_MINUS test problems.
+
+K. Deb, L. Thiele, M. Laumanns, and E. Zitzler, "Scalable Test Problems for 
+Evolutionary Multiobjective Optimization," in Evolutionary Multiobjective 
+Optimization. Theoretical Advances and Applications, pp. 105-145, 2005.
+
+H. Ishibuchi, Y. Setoguchi, H. Masuda, and Y. Nojima, "Performance of 
+Decomposition-Based Many-Objective Algorithms Strongly Depends on Pareto Front 
+Shapes," in IEEE Transactions on Evolutionary Computation, vol. 21, no. 2, 
+pp. 169-190, 2017.
+"""
+
 import numpy as np
 
 #Returns number of decision variables and their lower and upper bounds

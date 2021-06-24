@@ -1,3 +1,15 @@
+"""
+Reference set generated with the systematic approach proposed by Das and Dennis.
+
+I. Das and J. E. Dennis, "Normal-Boundary Intersection: A New Method for 
+Generating the Pareto Surface in Nonlinear Multicriteria Optimization Problems," 
+in SIAM Journal on Optimization, vol. 8, no. 3, pp. 631-657, 1998.
+
+Y. Tian, R. Cheng, X. Zhang, and Y. Jin, "PlatEMO: A MATLAB platform for 
+evolutionary multi-objective optimization," in IEEE Computational Intelligence 
+Magazine, vol. 12, no. 4, pp. 73-87, 2017.
+"""
+
 import numpy as np
 import numpy.matlib
 import itertools

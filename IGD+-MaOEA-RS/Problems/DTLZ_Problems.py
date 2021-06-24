@@ -1,3 +1,11 @@
+"""
+DTLZ test problems.
+
+K. Deb, L. Thiele, M. Laumanns, and E. Zitzler, "Scalable Test Problems for 
+Evolutionary Multiobjective Optimization," in Evolutionary Multiobjective 
+Optimization. Theoretical Advances and Applications, pp. 105-145, 2005.
+"""
+
 import numpy as np
 
 #Returns number of decision variables and their lower and upper bounds
