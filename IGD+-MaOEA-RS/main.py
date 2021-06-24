@@ -420,11 +420,14 @@ def main(H,flag,problem,m,max_evaluations):
 if __name__ == '__main__':
     if (len(sys.argv) == 1):
         sys.exit("Incorrect number of arguments. For more information, please use: main.py --help")
-    if (str(sys.argv[1]) == '--help'):
-        f = open('../README.txt',"r")
-        contents = f.read()
-        f.close()
-        print(contents)
+    if (len(sys.argv) == 2):
+        if (str(sys.argv[1]) == '--help'):
+            f = open('../README.txt',"r")
+            contents = f.read()
+            f.close()
+            print(contents)
+        else:
+            sys.exit("Incorrect number of arguments. For more information, please use: main.py --help")
     else:
         if (len(sys.argv) != 6):
             sys.exit("Incorrect number of arguments. For more information, please use: main.py --help")
