@@ -418,32 +418,41 @@ def main(H,flag,problem,m,max_evaluations):
     return P
 
 if __name__ == '__main__':
-    if (len(sys.argv) != 6):
-        sys.exit("Incorrect number of arguments. Use: ./main.py H flag problem m max_evaluations")
-    H = int(sys.argv[1])
-    flag = int(sys.argv[2])
-    problem = str(sys.argv[3])
-    m = int(sys.argv[4])
-    max_evaluations = int(sys.argv[5])
-    if (H <= 0):
-        sys.exit("Invalid value for H. Use a positive integer.")
-    if not(flag == 0 or flag == 1 or flag == 2 or flag == 3):
-        sys.exit("Invalid value for flag. Use 0, 1, 2, or 3.")
-    validProblem = 0
-    for i in range(1,8):
-        if (problem == 'DTLZ'+str(i)):
-            validProblem = 1
-    for i in range(1,8):
-        if (problem == 'DTLZ'+str(i)+'_MINUS'):
-            validProblem = 1
-    for i in range(1,9):
-        if (problem == 'IMOP'+str(i)):
-            validProblem = 1
-    if (validProblem == 0):
-        sys.exit("Invalid value for problem. Use a valid problem name.")
-    if (m <= 1):
-        sys.exit("Invalid value for m. Use a positive integer greater than 1.")
-    if (max_evaluations < 0):
-        sys.exit("Invalid value for max_evaluations. Use a non-negative integer.")
-    P = main(H,flag,problem,m,max_evaluations)
-    saveApproximationSet(P.obj,flag,problem)
+    if (len(sys.argv) == 1):
+        sys.exit("Incorrect number of arguments. For more information, please use: main.py --help")
+    if (str(sys.argv[1]) == '--help'):
+        f = open('../README.txt',"r")
+        contents = f.read()
+        f.close()
+        print(contents)
+    else:
+        if (len(sys.argv) != 6):
+            sys.exit("Incorrect number of arguments. For more information, please use: main.py --help")
+        H = int(sys.argv[1])
+        flag = int(sys.argv[2])
+        problem = str(sys.argv[3])
+        m = int(sys.argv[4])
+        max_evaluations = int(sys.argv[5])
+        if (H <= 0):
+            sys.exit("Invalid value for the number of divisions per objective function. For more information, please use: main.py --help")
+        if not(flag == 0 or flag == 1 or flag == 2 or flag == 3):
+            sys.exit("Invalid value for the reference set adaptation method. For more information, please use: main.py --help")
+        validProblem = 0
+        for i in range(1,8):
+            if (problem == 'DTLZ'+str(i)):
+                validProblem = 1
+        for i in range(1,8):
+            if (problem == 'DTLZ'+str(i)+'_MINUS'):
+                validProblem = 1
+        for i in range(1,9):
+            if (problem == 'IMOP'+str(i)):
+                validProblem = 1
+        if (validProblem == 0):
+            sys.exit("Invalid MOP name. For more information, please use: main.py --help")
+        if (m <= 1):
+            sys.exit("Invalid value for the number of objective functions. For more information, please use: main.py --help")
+        if (max_evaluations < 0):
+            sys.exit("Invalid value for the maximum number of objective function evaluations. For more information, please use: main.py --help")
+        P = main(H,flag,problem,m,max_evaluations)
+        saveApproximationSet(P.obj,flag,problem)
+
