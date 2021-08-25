@@ -84,3 +84,9 @@ CONTENTS
        material of the paper: Towards a More Balanced Reference Set Adaptation 
        Method: First Results.
 
+REFERENCE
+	L. A. Márquez-Vega, J. G. Falcón-Cardona, and E. C. Osuna, "Towards a 
+	More Balanced Reference Set Adaptation Method: First Results," 2021 
+	IEEE Congress on Evolutionary Computation (CEC), 2021, pp. 1185-1192, 
+	doi: 10.1109/CEC45853.2021.9504769.
+
