@@ -85,8 +85,18 @@ CONTENTS
        Method: First Results.
 
 REFERENCE
-	L. A. Márquez-Vega, J. G. Falcón-Cardona, and E. C. Osuna, "Towards a 
+	L. A. Márquez-Vega, J. G. Falcón-Cardona, and E. Covantes Osuna, "Towards a 
 	More Balanced Reference Set Adaptation Method: First Results," 2021 
 	IEEE Congress on Evolutionary Computation (CEC), 2021, pp. 1185-1192, 
 	doi: 10.1109/CEC45853.2021.9504769.
-
+	
+	Or you can use the following BibTex entry:
+	
+	@inproceedings{Marquez2021,
+		author={M{\'a}rquez-Vega, Luis A. and Falc{\'o}n-Cardona, Jes{\'u}s Guillermo and {Covantes Osuna}, Edgar},
+  		booktitle={2021 IEEE Congress on Evolutionary Computation (CEC)}, 
+  		title="{Towards a More Balanced Reference Set Adaptation Method: First Results}", 
+  		year={2021},
+  		pages={1185--1192},
+  		doi={10.1109/CEC45853.2021.9504769}
+	}
